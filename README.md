@@ -4,18 +4,18 @@ Rest Api Doc 제작을 위한 springgox-Swagger-UI 이용
 
 * 따로 Rest API에 대한 스펙을 명시하지 않고도 Api Doc을 작성할 수 있도록 도와주는 API 
 
-###테스트 환경
+### 테스트 환경
 * java 8
 * Spring MVC
 * Spring Boot
 
-###Swagger 의존성 추가
+### Swagger 의존성 추가
 ```text
 compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
 compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
 ```
 
-###Swagger Bean 생성
+### Swagger Bean 생성
 ```java
 @Configuration
 @EnableSwagger2     //Swagger2를 활성화하기 위한 Annotation
@@ -62,7 +62,7 @@ public class SwaggerConfig {
 
 
 
-###Controller에  Swagger 사용을 명시하는 방법
+### Controller에  Swagger 사용을 명시하는 방법
 ```java
 package com.kihyeonkim.swagger.controller;
 
